@@ -3,28 +3,22 @@ var resumed_count = 0;
 var launched_count = 0;
 var key = “age”;
 var value = “20”;
-var key2 = “bradage”;
-var value2 = “21”;
-var key3 = “zaibage”;
-var value3 = “19”;
-var key4 = “kateage”;
-var value4 = “18”;
-var key5 = “jasonage”;
-var value5 = “26”;
-
+window.localStorage.setItem( key, value );
+var key = “bradage”;
+var value = “21”;
+window.localStorage.setItem( key, value );
+var key = “zaibage”;
+var value = “19”;
+window.localStorage.setItem( key, value );
+var key = “kateage”;
+var value = “18”;
+window.localStorage.setItem( key, value );
+var key = “jasonage”;
+var value = “26”;
 window.localStorage.setItem( key, value );
 
 
-window.localStorage.setItem( key2, value2 );
 
-
-window.localStorage.setItem( key3, value3 );
-
-
-window.localStorage.setItem( key4, value4 );
-
-
-window.localStorage.setItem( key5, value5 );
 
 //event defined
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -37,23 +31,23 @@ function updateDisplay() {
     
     var key = “age”;
     var value = window.localStorage.getItem(key);
-    $("#launched").text(key + "is: " + value);
+    $("#d1").text(key + "is: " + value);
     
-    var key2 = “bradage”;
-    var value2 = window.localStorage.getItem(key2);
-    $("#launched").text(key2 + "is: " + value2);
+    var key = “bradage”;
+    var value = window.localStorage.getItem(key);
+    $("#d2").text(key + "is: " + value);
     
-    var key3 = “zaibage”;
-    var value3 = window.localStorage.getItem(key3);
-    $("#launched").text(key3 + "is: " + value3);
+    var key = “zaibage”;
+    var value = window.localStorage.getItem(key);
+    $("#d3").text(key + "is: " + value);
     
-    var key4 = “kateage”;
-    var value4 = window.localStorage.getItem(key4);
-    $("#launched").text(key4 + "is: " + value4);
+    var key = “kateage”;
+    var value = window.localStorage.getItem(key);
+    $("#d4").text(key + "is: " + value);
     
-    var key5 = “jasonage”;
-    var value5 = window.localStorage.getItem(key5);
-    $("#launched").text(key5 + "is: " + value5);
+    var key = “jasonage”;
+    var value = window.localStorage.getItem(key);
+    $("#d5").text(key + "is: " + value);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
