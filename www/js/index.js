@@ -2,6 +2,7 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
 var Me = { "name":"Court", "age":20, "city":"Worcester" };
+var Mefavs = { "name":"Court", "age":20, "sauces":["Worcester","ketchup","BBQ","Pop"] };
 var myJSON = JSON.stringify(Me);
     
     var key = "age";
@@ -57,6 +58,7 @@ function updateDisplay() {
     $("#d5").text(key + "is: " + value);
     
     $("#d6").text(Me.city);
+    $("#d7").text(Mefavs.sauces[2]);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
