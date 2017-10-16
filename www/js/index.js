@@ -1,6 +1,8 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
+var Me = { "name":"Court", "age":20, "city":"Worcester" };
+var myJSON = JSON.stringify(Me);
     
     var key = "age";
     var value = "20";
@@ -53,6 +55,8 @@ function updateDisplay() {
     key = "jasonage";
     value = window.localStorage.getItem(key);
     $("#d5").text(key + "is: " + value);
+    
+    Console.log(Me.age);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
