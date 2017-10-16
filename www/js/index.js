@@ -56,7 +56,7 @@ function updateDisplay() {
     value = window.localStorage.getItem(key);
     $("#d5").text(key + "is: " + value);
     
-    $("#d6").text( myJSON.name + "is" + myJSON.age);
+    $("#d6").text(myJSON.age);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
