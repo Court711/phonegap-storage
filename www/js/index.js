@@ -56,7 +56,7 @@ function updateDisplay() {
     value = window.localStorage.getItem(key);
     $("#d5").text(key + "is: " + value);
     
-    $("#d6").text(me.name + "is"+me.age);
+    $("#d6").text( Me.name + "is" + me.age);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
