@@ -58,7 +58,7 @@ function updateDisplay() {
     $("#d5").text(key + "is: " + value);
     
     $("#d6").text(Me.city);
-    $("#d7").text(Mefavs.sauces[2]);
+    $("#d7").text(Mefavs.sauces[1]);
     
     //var key = “pen”;
     //var value = window.localStorage.getItem(key);
