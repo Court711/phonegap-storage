@@ -1,19 +1,6 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-
-
-
-
-
-
-//event defined
-document.addEventListener("deviceready", onDeviceReady, false);
-		
-
-
-
-function updateDisplay() {
     
     var key = "age";
     var value = "20";
@@ -30,6 +17,18 @@ function updateDisplay() {
     key = "jasonage";
     value = "26";
     window.localStorage.setItem( key, value );
+
+
+
+
+
+//event defined
+document.addEventListener("deviceready", onDeviceReady, false);
+		
+
+
+
+function updateDisplay() {
     
 	$("#launched").text("Application Launched: " + launched_count);
 	$("#resumed").text("Application Paused: " + paused_count);
