@@ -1,21 +1,8 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-var key = “age”;
-var value = “20”;
-window.localStorage.setItem( key, value );
-var key = “bradage”;
-var value = “21”;
-window.localStorage.setItem( key, value );
-var key = “zaibage”;
-var value = “19”;
-window.localStorage.setItem( key, value );
-var key = “kateage”;
-var value = “18”;
-window.localStorage.setItem( key, value );
-var key = “jasonage”;
-var value = “26”;
-window.localStorage.setItem( key, value );
+
+
 
 
 
@@ -23,8 +10,27 @@ window.localStorage.setItem( key, value );
 //event defined
 document.addEventListener("deviceready", onDeviceReady, false);
 		
-	
+
+
+
 function updateDisplay() {
+    
+    var key = “age”;
+    var value = “20”;
+    window.localStorage.setItem( key, value );
+    var key = “bradage”;
+    var value = “21”;
+    window.localStorage.setItem( key, value );
+    var key = “zaibage”;
+    var value = “19”;
+    window.localStorage.setItem( key, value );
+    var key = “kateage”;
+    var value = “18”;
+    window.localStorage.setItem( key, value );
+    var key = “jasonage”;
+    var value = “26”;
+    window.localStorage.setItem( key, value );
+    
 	$("#launched").text("Application Launched: " + launched_count);
 	$("#resumed").text("Application Paused: " + paused_count);
 	$("#paused").text("Application Resumed: " + resumed_count);
